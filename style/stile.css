@@ -1,0 +1,145 @@
+:root {
+    --cor-escura: #171717;
+    --cor-media: #212121;
+    --cor-clara: #d3d7e7;
+    --gray-light: #f7f7f7; /* cinza claro para o fundo da tabela */
+    --gray-medium: #b0b0b0; /* cinza mais suave para as células de dados */
+    --gray-dark: #2f2f3d; /* cinza escuro com toque de preto azulado para o cabeçalho */
+    --gray-border: #555; /* cinza metálico para as bordas da tabela */
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--gray-medium);
+    color: var(--cor-escura);
+}
+
+button {
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--cor-escura);
+    color: var(--gray-medium);
+    transition: all ease-in-out .2s;
+  }
+  button:hover{
+  transition: all ease-in-out .2s;
+  width: 75px;
+  height: 33px;
+  background-color: var(--cor-media);
+}
+
+input {
+    background: transparent; /* Remove o fundo branco */
+    border: none; /* Remove todas as bordas */
+    border-bottom: 2px solid var(--cor-escura); /* Adiciona apenas a borda inferior */
+    outline: none; /* Remove o contorno azul ao clicar */
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    caret-color: var(--cor-escura);
+    color: var(--cor-escura);
+}
+
+/* Para estilizar quando o input estiver focado */
+input:focus {
+    border-bottom: 2px solid var(--cor-escura); /* Muda a cor da borda inferior ao focar */
+}
+
+/* Remove as setas padrão dos inputs tipo number */
+input[type='number'] {
+    -moz-appearance: textfield; /* Para Firefox */
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Para Chrome, Safari e Edge */
+    margin: 0;
+}
+
+/* Remove as bordas verticais da tabela */
+table {
+    border-collapse: collapse; /* Colapsa as bordas para que não apareçam duplas */
+}
+
+table, th, td {
+    border: none; /* Remove todas as bordas da tabela, células e cabeçalhos */
+    text-align: center;
+    
+}
+
+/* Adiciona borda apenas nas linhas horizontais (se necessário) */
+tr {
+    border-bottom: 2px solid var(--gray-dark); /* Linha horizontal entre as linhas */
+}
+
+/* Adiciona borda no cabeçalho */
+th {
+    border-bottom: 3px solid var(--gray-dark); /* Linha mais forte no cabeçalho */
+}
+
+
+.container {
+    /* background-color: antiquewhite; */
+    padding: 2%;
+}
+
+.input-area {
+    background-color: var(--gray-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    width: 50vw;
+    height: 45vh;
+    padding: 25px;
+    border-radius: 25px;
+}
+.input-area input {
+    margin-left: 3vw;
+}
+.id,
+.name,
+.price,
+.quant {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 3vw;
+}
+.id{
+    display: none;
+}
+
+.btn-send-area{
+  width: 100%;
+  height: 60px;
+}
+.btn-send {
+    margin-top: 15px;
+    margin-left: 30vw;
+}
+
+.table-area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+table{
+  width: 80%;
+  cursor: pointer;
+
+}
+tr, td{
+  height: 45px;
+
+}

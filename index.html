@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/stile.css" />
+    <script defer src="./scripts/renderer.js"></script>
+    <script defer src="./scripts/sendRendererScript.js"></script>
+    <title>Tabela de valores</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <!-- Área de Inputs -->
+            <div class="input-area">
+                <div class="id">
+                    <label for="id">Id:</label>
+                    <input type="number" id="id" name="id" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                </div>
+                <div class="name">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                </div>
+                <div class="price">
+                    <label for="price">Preço:</label>
+                    <input type="number" id="price" name="price" autocomplete="off" autocorrect="off" autocapitalize="on" spellcheck="false" />
+                </div>
+                <div class="quant">
+                    <label for="quant">Quantidade:</label>
+                    <input type="number" id="quant" name="quant" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                </div>
+                <div class="btn-send-area">
+                    <button class="btn-send">Cadastrar</button>
+                </div>
+            </div>
+
+            <!-- Área da Tabela -->
+            <div class="table-area">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Preço (R$)</th>
+                            <th>Quantidade</th>
+                            <th>Valor Total (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

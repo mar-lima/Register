@@ -1,0 +1,30 @@
+[
+  {
+    "id": 7900,
+    "name": "Teclado Mecânico",
+    "price": 205,
+    "quantity": 2,
+    "total": "410.00"
+  },
+  {
+    "id": 7901,
+    "name": "Mouse Óptico",
+    "price": 79.9,
+    "quantity": 3,
+    "total": "239.70"
+  },
+  {
+    "id": 7902,
+    "name": "Monitor LED 24\"",
+    "price": 899,
+    "quantity": 1,
+    "total": "899.00"
+  },
+  {
+    "id": 7903,
+    "name": "Caixa de Som Bluetooth",
+    "price": 129.99,
+    "quantity": 2,
+    "total": "259.98"
+  }
+]
